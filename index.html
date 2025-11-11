@@ -35,6 +35,14 @@
             margin: 2.5rem 0 1rem;
         }
         
+        h3 {
+            font-size: clamp(1rem, 3vw, 1.125rem);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin: 1.5rem 0 0.5rem;
+            color: #2a2a2a;
+        }
+        
         p {
             font-size: clamp(1rem, 2.5vw, 1.125rem);
             color: #4a4a4a;
@@ -52,6 +60,16 @@
             border-radius: 0.25rem;
             text-decoration: none;
             margin-top: 1rem;
+        }
+        
+        .faq {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .faq-item {
+            margin-bottom: 2rem;
         }
         
         @media (min-width: 768px) {
@@ -84,5 +102,60 @@
     </p>
     
     <a href="https://discord.gg/5gKjrWjCf7" class="beta-button">Join the Beta</a>
+    
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <h3>Who is Storyline for?</h3>
+            <p>
+                Storyline is for anyone who collects and listens to audiobooks. Whether you have a small 
+                collection or thousands of titles, if you've ever felt frustrated by the lack of good 
+                audiobook management tools, Storyline is for you.
+            </p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Is Storyline an Electron app?</h3>
+            <p>
+                No. Storyline is built using GPUI, a GPU-accelerated Rust framework. This means truly 
+                native performance, minimal memory usage, and a responsive interface that feels fast 
+                and fluid.
+            </p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>What platforms does Storyline support?</h3>
+            <p>
+                Currently, Storyline is available for macOS only during the beta period. We're planning 
+                to expand to Windows and Linux after the initial release.
+            </p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>What audio formats are supported?</h3>
+            <p>
+                Storyline supports all common audiobook formats including M4B, M4A, MP3, FLAC, OGG, and 
+                more. We handle both single-file audiobooks and multi-file collections.
+            </p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Where is my library data stored?</h3>
+            <p>
+                Your library metadata is stored locally on your machine. Your actual audiobook files 
+                stay exactly where you put them—Storyline never moves or modifies your original files 
+                without your permission.
+            </p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Is Storyline open source?</h3>
+            <p>
+                Not yet. During the beta period, Storyline is closed source. We're planning to open 
+                source the project at release. We believe in transparency and community-driven development.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
